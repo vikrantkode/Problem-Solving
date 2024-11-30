@@ -35,11 +35,11 @@ public class Solution {
 
 
 for every row its like , suppose n=5
-                       1st row - 4space 1star 4space
-                       2nd row - 3space 3star 3space
-                       3rd row - 2space 5star 2space
-                       4th row - 1space 7star 1space
-                       5th row - 0space 9star 0space
+                       0st row - 4space 1star 4space
+                       1nd row - 3space 3star 3space
+                       2rd row - 2space 5star 2space
+                       3th row - 1space 7star 1space
+                       4th row - 0space 9star 0space
 
 formulae for space = n-i-1     5-0-1 = 4space
                                5-1-1 = 3space
