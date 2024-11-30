@@ -1,0 +1,54 @@
+       *
+      ***
+     *****
+    *******
+   *********
+  ***********
+ *************
+***************
+
+https://www.naukri.com/code360/problems/star-triangle_6573671?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+
+
+public class Solution {
+    public static void nStarTriangle(int n) {
+        // This is the outer loop which will loop for the rows.
+         for(int i=0;i<n;i++){
+            // For printing the spaces before stars in each row
+            for(int j=0;j< n-i-1 ;j++){
+                System.out.print(" ");
+            }
+            // For printing the stars in each row
+            for(int j=0;j< 2*i+1 ;j++){
+                System.out.print("*");
+            }
+             // For printing the spaces after the stars in each row
+            for(int j=0;j< n-i-1 ;j++){
+                System.out.print(" ");
+            }
+        System.out.println();
+        }
+    }
+}
+
+
+
+
+for every row its like , suppose n=5
+                       1st row - 4space 1star 4space
+                       2nd row - 3space 3star 3space
+                       3rd row - 2space 5star 2space
+                       4th row - 1space 7star 1space
+                       5th row - 0space 9star 0space
+
+formulae for space = n-i-1     5-0-1 = 4space
+                               5-1-1 = 3space
+                               5-2-1 = 2space
+                               5-3-1 = 1space
+                               5-4-1 = 0space
+
+formulae for star = 2*i+1      2*0+1 = 1star
+                               2*1+1 = 3star
+                               2*2+1 = 5star
+                               2*3+1 = 7star
+                               2*4+1 = 9star
