@@ -1,0 +1,53 @@
+***************
+ *************
+  ***********
+   *********
+    *******
+     *****
+      ***
+       *
+
+https://www.naukri.com/code360/problems/reverse-star-triangle_6573685?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+public class Solution {
+    public static void nStarTriangle(int n) {
+         // This is the outer loop which will loop for the rows.
+         for(int i=0;i<n;i++){
+            // For printing the spaces before stars in each row
+            for(int j=0;j<i ;j++){
+                System.out.print(" ");
+            }
+            // For printing the stars in each row
+            for(int j=0;j< 2*n - (2*i + 1) ;j++){
+                System.out.print("*");
+            }
+             // For printing the spaces after the stars in each row
+            for(int j=0;j<i ;j++){
+                System.out.print(" ");
+            }
+        System.out.println();
+        }
+    }
+}
+
+
+
+
+for every row its like , suppose n=5
+                       0st row - 0space 9star 0space
+                       1nd row - 1space 7star 1space
+                       2rd row - 2space 5star 2space
+                       3th row - 3space 3star 3space
+                       4th row - 4space 1star 4space
+
+formulae for space = i     0th row = 0space
+                           1st row = 1space
+                           2nd row = 2space
+                           3rd row = 3space
+                           4th row = 4space
+
+formulae for star = 2*n-(2*i+1)      2*5-(2*0+1) = 9star
+                                     2*5-(2*1+1) = 7star
+                                     2*5-(2*2+1) = 5star
+                                     2*5-(2*3+1) = 3star
+                                     2*5-(2*4+1) = 1star

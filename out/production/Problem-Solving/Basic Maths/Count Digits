@@ -1,0 +1,22 @@
+https://www.naukri.com/code360/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+Example:
+Input: ‘n’ = 336
+
+Output: 3
+
+public class Solution {
+    public static int countDigits(int n){
+        int count=0;
+        int originalNumber=n;
+        while(n>0){
+           int remainingDigit = n%10;
+           if(remainingDigit!=0 && originalNumber%remainingDigit == 0){
+                count++;
+           }
+
+           n=n/10;
+        }
+        return count;
+    }
+}
